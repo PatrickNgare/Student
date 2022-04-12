@@ -19,7 +19,7 @@ public class AmigoscodeApplication {
     @Bean
     CommandLineRunner commandLineRunner(StudentService studentService) {
         return args -> {
-            Student patrick = new Student("patrick", "jones", "patrickngare@gmail.com", 21);
+            Student patrick = new Student("patrick", "jones", "patrickngar8e@gmail.com", 21);
             studentService.save(patrick);
         };
     }

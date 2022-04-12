@@ -30,11 +30,11 @@ public class Student {
   @GeneratedValue(strategy = GenerationType.SEQUENCE,generator = "student_sequence")
    @Column(name = "id",updatable = false)
     private long id;
-    @Column(name = "first_name",nullable = false,columnDefinition = "TEXT")
+    @Column(name = "first_name",nullable = false,columnDefinition = "varchar(250)")
     private  String firstName;
-    @Column(name = "last_name",nullable = false,columnDefinition = "TEXT")
+    @Column(name = "last_name",nullable = false,columnDefinition = "varchar(250)")
     private String lastName;
-    @Column(name = "fast_name",nullable = false,columnDefinition = "TEXT" ,unique = true)
+    @Column(name = "email",nullable = false,columnDefinition = "varchar(250)" ,unique = true)
     private String email;
     @Column(name = "age",nullable = false)
     private Integer age;
